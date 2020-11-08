@@ -69,6 +69,7 @@
 						</div>
 						<div class="pageTitle">更新履歴</div>
 						<div class="pageContents">
+							2020/11/08 NNSVSモデルを追加、整理<br>
 							2020/10/25 NNSVSモデルを追加<br>
 							2020/10/24 NNSVSモデルを追加、利用規約を更新、立ち絵のダウンロードを追加<br>
 							2020/08/01 利用規約を更新<br>
@@ -204,11 +205,100 @@
 						<div class="pageTitle">NNSVSモデルダウンロード</div>
 						<div class="pageContents">
 							<div class="pageSubTitle">NNSVSモデル</div>
-							<a href="https://drive.google.com/uc?export=download&id=1tQjKQY8lpsnaADkdVQfZy-675BlNr1cz" target="_blank">Haruqa_AutomaticGenerate_NNSVSmodel_20201025+WSLのNNSVS用実行GUI</a><br>
-							<a href="https://drive.google.com/uc?export=download&id=1w49WOh9iDZZgB5tJE8X-ZqyrYMm5--UQ" target="_blank">Haruqa_AutomaticGenerate_NNSVSmodel_20201024+WSLのNNSVS用実行GUI</a><br>
-							<a href="https://drive.google.com/uc?export=download&id=1hovUG7zAgweJsNWGVAdV1oACknwAeb2X" target="_blank">Haruqa_AutomaticGenerate_NNSVSmodel_20200923</a><br>
+							<div class="pageSubSubTitle"><a href="https://drive.google.com/uc?export=download&id=1hW7gPmPiUc5V_vATDzyMk7ZdyNee8Dru" target="_blank">Haruqa_AutoGenPitchFix_20201108+WSLのNNSVS用実行GUI</a></div>
+							<div class="pageSubSubContent">
+								バージョン付き名称表記：Haruqa_AutomaticGeneratePitchFix_NNSVSmodel_20201108<br>
+								略式表記：Haruqa_AutoGenPitchFix_20201108<br>
+								使用データセット：Haruqa_DatasetForNNSVS_FaithfulRec_202010<br>
+								wav処理：詳細ノイズ除去、音圧調整、収録ミス分除外、自動ピッチ修正、解析エラー分除外<br>
+								使用したwavの長さ：1時間17分<br>
+								モデル構造：<br>
+								acoustic:nnsvs.model.Conv1dResnet<br>
+								duration:nnsvs.model.LSTMRNN<br>
+								timelag:nnsvs.model.FeedForwardNet<br>
+								学習回数：200epoch<br>
+								使用サンプル：<a href="https://drive.google.com/drive/folders/1iTrYcIyHjLWuhUfDXSqCqXSE0RVTRKN2?usp=sharing">こちら</a><br>
+								色々手を尽くしたけど、30分くらいwavを除外するしかなかったよ…という感じ。<br>
+								自動ピッチ修正かけると元のピッチの表現力消えるじゃーんと思って、ピッチ修正なしのものも作ろうとしたけど、ノイズがどうにもならなかった…。
+							</div>
+
+							<div class="pageSubSubTitle"><a href="https://drive.google.com/uc?export=download&id=1hovUG7zAgweJsNWGVAdV1oACknwAeb2X" target="_blank">Haruqa_AutoGen_20200923</a></div>
+							<div class="pageSubSubContent">
+								バージョン付き名称表記：Haruqa_AutomaticGenerate_NNSVSmodel_20200923<br>
+								略式表記：Haruqa_AutoGen_20200923<br>
+								使用データセット：Haruqa_DatasetForNNSVS_FreestyleRec_202009<br>
+								wav処理：定常ノイズ除去<br>
+								モデル構造：<br>
+								acoustic:nnsvs.model.Conv1dResnet<br>
+								duration:nnsvs.model.LSTMRNN<br>
+								timelag:nnsvs.model.FeedForwardNet<br>
+								学習回数：50epoch<br>
+								使用サンプル：<a href="https://youtu.be/qbuQmoLo64E">こちら</a><br>
+								とりあえず音がでるねぇ…という感じのテストモデルというところ。<br>
+								データセットからどのくらいwavを使ったのか、データ消しちゃったので不明…。
+							</div>
+
 							<div class="pageSubTitle">協力</div>
 							環境構築協力：CrazY(<a href="https://twitter.com/crazy_toho" target="_blank">@crazy_toho</a>) さま
+
+							<div class="pageSubTitle">収録手法</div>
+							<div class="pageSubSubTitle">自由収録(FreestyleRec)</div>
+							<div class="pageSubSubContent">
+								詳細未公開
+							</div>
+							<div class="pageSubSubTitle">忠実収録(FaithfulRec)</div>
+							<div class="pageSubSubContent">
+								詳細未公開
+							</div>
+							<div class="pageSubSubTitle">UTAU収録(UTAURec)</div>
+							<div class="pageSubSubContent">
+								UTAU音源の収録方法で収録したもの、作成したモデルは非公開<br>
+								サンプルは<a href="https://drive.google.com/drive/folders/1JYlUFPsysbvmCYnK-IETLiSg797X_yFt?usp=sharing">こちら</a>
+							</div>
+
+							<div class="pageSubTitle">データセット説明</div>
+							<div class="pageSubSubTitle">Haruqa_DatasetForNNSVS_FreestyleRec_202009</div>
+							<div class="pageSubSubContent">
+								収録手法：自由収録<br>
+								収録日：2020/09<br>
+								収録状況：エアコンとデスクトップPCの排気音でうるさい<br>
+								単純なwavの長さ：38分<br>
+								音素ラベリング：自動<br>
+								備考：テスト収録のようなものですね。<br>
+								未公開
+							</div>
+							<div class="pageSubSubTitle">Haruqa_DatasetForNNSVS_FaithfulRec_202010</div>
+							<div class="pageSubSubContent">
+								収録手法：忠実収録<br>
+								収録日：2020/10<br>
+								収録状況：エアコンは切ってノートPCで収録したので、ノイズは少な目<br>
+								単純なwavの長さ：1時間46分<br>
+								音素ラベリング：自動<br>
+								未公開
+							</div>
+
+							<div class="pageSubTitle">wav処理説明</div>
+							<div class="pageSubSubTitle">ノイズ除去</div>
+							<div class="pageSubSubContent">
+								iZotope RX 7 Elementsにてノイズ除去
+							</div>
+							<div class="pageSubSubTitle">音圧調整</div>
+							<div class="pageSubSubContent">
+								iZotope RX 7 Elementsにて手コンプ、全体にソフトリミッターなど
+							</div>
+							<div class="pageSubSubTitle">収録ミス分除外</div>
+							<div class="pageSubSubContent">
+								噛んでる、除去出来ないノイズ、機材の不具合等で音質が著しく悪い等を除外
+							</div>
+							<div class="pageSubSubTitle">自動ピッチ修正</div>
+							<div class="pageSubSubContent">
+								楽譜に沿って、ピッチを機械的に修正
+							</div>
+							<div class="pageSubSubTitle">解析エラー分除外</div>
+							<div class="pageSubSubContent">
+								worldの有声/無声の判定ミス(?)により、ノイズ化するであろう部分を除外<br>
+								著しい音素ラベリングのズレもここで引っかかる(…と思われ)なので、ズレ軽減も期待…
+							</div>
 						</div>
 					</div>
 					<div class="page" id="page3">
