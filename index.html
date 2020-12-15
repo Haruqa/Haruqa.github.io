@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="ja">
 	<head>
-		<meta name="keywords" content="UTAU,UTAU音源,MMD,Haruqa,利用規約,配布">
+		<meta name="keywords" content="UTAU,UTAU音源,AIシンガー,NNSVS,MMD,Haruqa,利用規約,配布">
 		<meta name="description" content="HaruqaのUTAU音源とMMDモデルの配布サイトです。キャラクター設定と利用規約が確認できます。">
 		<meta name="robots" content="noarchive">
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -69,6 +69,7 @@
 						</div>
 						<div class="pageTitle">更新履歴</div>
 						<div class="pageContents">
+							2020/12/15 ENUNU対応のNNSVSモデルについて説明書きを追加<br>
 							2020/12/13 ENUNU対応のNNSVSモデルを追加<br>
 							2020/11/08 NNSVSモデルを追加、整理<br>
 							2020/10/25 NNSVSモデルを追加<br>
@@ -205,13 +206,23 @@
 					<div class="page" id="page2">
 						<div class="pageTitle">NNSVSモデルダウンロード</div>
 						<div class="pageContents">
-							<div class="pageSubTitle">NNSVSモデル</div>
+							<div class="pageSubTitle">ENUNU対応</div>
 							<div class="pageSubSubTitle"><a href="https://drive.google.com/uc?export=download&id=1cuN9mOEZJKwoQC4KDJbSx0tUf1bb10ES" target="_blank">ENUNU_Haruqa_20201213</a></div>
 							<div class="pageSubSubContent">
 								Haruqa_AutoGenPitchFix_20201108からENUNU対応をしました。<br>
 								ENUNUの使い方：<a href="https://note.com/crazy_utau/n/n45db22b33d2c" target="_blank">UTAUでNNSVSモデルを使おう！（ENUNU）</a><br>
-								補足：ダウンロードしたzipを解凍し、UTAU音源のごとくUTAUのvoiceフォルダに入れてください。ustを保存し、再生範囲を選択し、ENUNUを起動するとwavを出力できます。
+								補足：ダウンロードしたzipをUTAUへドラッグ＆ドロップしてください。もしくは、ダウンロードしたzipを解凍し、UTAU音源のごとくUTAUのvoiceフォルダに入れてください。<br>
+								ustを保存し、再生範囲を選択し、ENUNUを起動すると、保存したustと同じ場所にwavが出力されます。
+								<div style="background-color: black; padding:5px">
+									<span style="font-size:20px;font-weight:bold">※ENUNUの使い方についてご注意※<br></span>
+									2020/12/15現在、ENUNUは<span style="color:red">UTAUのwavファイルを生成ではなく</span>、<br>
+									<span style="color:red">UTAUプラグイン実行により</span>NNSVSモデルからのwav出力を行います。<br>
+									UTAU上での通常の再生や、UTAUのwav出力で得られる音声は、<br>
+									ustの確認のための<span style="color:red">UTAU単独音音源</span>の音声です。
+									<img style="display: block;margin-right: auto;margin-left: auto;" src="img/ENUNU説明.png">
+								</div>
 							</div>
+							<div class="pageSubTitle">WSLのNNSVS対応</div>
 							<div class="pageSubSubTitle"><a href="https://drive.google.com/uc?export=download&id=1hW7gPmPiUc5V_vATDzyMk7ZdyNee8Dru" target="_blank">Haruqa_AutoGenPitchFix_20201108+WSLのNNSVS用実行GUI</a></div>
 							<div class="pageSubSubContent">
 								バージョン付き名称表記：Haruqa_AutomaticGeneratePitchFix_NNSVSmodel_20201108<br>
