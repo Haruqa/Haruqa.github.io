@@ -69,6 +69,7 @@
 						</div>
 						<div class="pageTitle">更新履歴</div>
 						<div class="pageContents">
+							2020/12/17 ENUNUのNNSVSモデルMDNバージョンを追加<br>
 							2020/12/15 ENUNU対応のNNSVSモデルについて説明書きを追加<br>
 							2020/12/13 ENUNU対応のNNSVSモデルを追加<br>
 							2020/11/08 NNSVSモデルを追加、整理<br>
@@ -207,20 +208,34 @@
 						<div class="pageTitle">NNSVSモデルダウンロード</div>
 						<div class="pageContents">
 							<div class="pageSubTitle">ENUNU対応</div>
+							<div style="background-color: black; padding:5px">
+								<span style="font-size:20px;font-weight:bold">※ENUNUの使い方についてご注意※<br></span>
+								2020/12/15現在、ENUNUは<span style="color:red">UTAUのwavファイルを生成ではなく</span>、<br>
+								<span style="color:red">UTAUプラグイン実行により</span>NNSVSモデルからのwav出力を行います。<br>
+								UTAU上での通常の再生や、UTAUのwav出力で得られる音声は、<br>
+								ustの確認のための<span style="color:red">UTAU単独音音源</span>の音声です。
+								<img style="display: block;margin-right: auto;margin-left: auto;" src="img/ENUNU説明.png">
+							</div>
+							<div class="pageSubSubTitle"><a href="https://drive.google.com/uc?export=download&id=1aHGsVgRc96YmvL4vg3oP6Y-wPrS4b6eX" target="_blank">ENUNU_Haruqa_20201217</a></div>
+							<div class="pageSubSubContent">
+								バージョン付き名称表記：ENUNU_Haruqa_AutomaticGeneratePitchFix_NNSVSmodel_20201108_CONV_MDN<br>
+								略式表記：ENUNU_Haruqa_AutoGenPitchFix_20201108_CONV_MDN<br>
+								使用データセット：Haruqa_DatasetForNNSVS_FaithfulRec_202010<br>
+								wav処理：詳細ノイズ除去、音圧調整、収録ミス分除外、自動ピッチ修正、解析エラー分除外<br>
+								使用したwavの長さ：1時間17分<br>
+								モデル構造：<br>
+								acoustic:nnsvs.model.Conv1dResnetMDN<br>
+								duration:nnsvs.model.MDN<br>
+								timelag:nnsvs.model.MDN<br>
+								学習回数：250epoch<br>
+								D4Cのスレッショルドを0に変更しましたが、有声/無声誤判定ノイズらしきものはは5%くらい発生します。
+							</div>
 							<div class="pageSubSubTitle"><a href="https://drive.google.com/uc?export=download&id=1cuN9mOEZJKwoQC4KDJbSx0tUf1bb10ES" target="_blank">ENUNU_Haruqa_20201213</a></div>
 							<div class="pageSubSubContent">
 								Haruqa_AutoGenPitchFix_20201108からENUNU対応をしました。<br>
 								ENUNUの使い方：<a href="https://note.com/crazy_utau/n/n45db22b33d2c" target="_blank">UTAUでNNSVSモデルを使おう！（ENUNU）</a><br>
 								補足：ダウンロードしたzipをUTAUへドラッグ＆ドロップしてください。もしくは、ダウンロードしたzipを解凍し、UTAU音源のごとくUTAUのvoiceフォルダに入れてください。<br>
 								ustを保存し、再生範囲を選択し、ENUNUを起動すると、保存したustと同じ場所にwavが出力されます。
-								<div style="background-color: black; padding:5px">
-									<span style="font-size:20px;font-weight:bold">※ENUNUの使い方についてご注意※<br></span>
-									2020/12/15現在、ENUNUは<span style="color:red">UTAUのwavファイルを生成ではなく</span>、<br>
-									<span style="color:red">UTAUプラグイン実行により</span>NNSVSモデルからのwav出力を行います。<br>
-									UTAU上での通常の再生や、UTAUのwav出力で得られる音声は、<br>
-									ustの確認のための<span style="color:red">UTAU単独音音源</span>の音声です。
-									<img style="display: block;margin-right: auto;margin-left: auto;" src="img/ENUNU説明.png">
-								</div>
 							</div>
 							<div class="pageSubTitle">WSLのNNSVS対応</div>
 							<div class="pageSubSubTitle"><a href="https://drive.google.com/uc?export=download&id=1hW7gPmPiUc5V_vATDzyMk7ZdyNee8Dru" target="_blank">Haruqa_AutoGenPitchFix_20201108+WSLのNNSVS用実行GUI</a></div>
