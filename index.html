@@ -14,7 +14,7 @@
 		<meta name="twitter:site" content="@niconicoharuqa">
 		<meta name="twitter:creator" content="@niconicoharuqa">
 		<meta name="twitter:title" content="Haruqaの配布サイト">
-		<meta name="twitter:description" content="HaruqaのUTAU音源、NNSVSモデル、MMDモデル、キャラクター立ち絵の配布サイトです。キャラクター設定と利用規約が確認できます。">
+		<meta name="twitter:description" content="HaruqaのUTAU音源、NNSVSモデル、TALQuモデル、VRM、SSYQu専用音源、MMDモデル、キャラクター立ち絵の配布サイトです。キャラクター設定と利用規約が確認できます。">
 		<meta name="twitter:image" content="https://haruqa.github.io/img/forTwitterLargeCard.png">
 		<title>Haruqaの配布サイト</title>
 	</head>
@@ -30,10 +30,13 @@
 						<!-- li#menu${<hr>} -->
 						<li id="menu1">UTAU音源ダウンロード<hr></li>
 						<li id="menu2">NNSVSモデルダウンロード<hr></li>
-						<li id="menu3">MMDモデルダウンロード<hr></li>
-						<li id="menu4">立ち絵ダウンロード<hr></li>
-						<li id="menu5">キャラクター詳細<hr></li>
-						<li id="menu6">利用規約<hr></li>
+						<li id="menu3">TALQuモデルダウンロード<hr></li>
+						<li id="menu4">SSYQu専用音源ダウンロード<hr></li>
+						<li id="menu5">VRMダウンロード<hr></li>
+						<li id="menu6">MMDモデルダウンロード<hr></li>
+						<li id="menu7">立ち絵ダウンロード<hr></li>
+						<li id="menu8">キャラクター詳細<hr></li>
+						<li id="menu9">利用規約<hr></li>
 						<li id="menuAll">全部表示<hr></li>
 					</ul>
 				</div>
@@ -44,7 +47,7 @@
 						<div class="pageTitle">始めに</div>
 						<div class="pageContents">
 							ご来訪ありがとうございます。<br>
-							ここはHaruqaのUTAU音源、NNSVSモデル、MMDモデル、キャラクター立ち絵の配布サイトです。キャラクター設定と利用規約が確認できます。<br>
+							ここはHaruqaのUTAU音源、NNSVSモデル、TALQuモデル、SSYQu専用音源、VRM、MMDモデル、キャラクター立ち絵の配布サイトです。キャラクター設定と利用規約が確認できます。<br>
 							<br>
 							ページ切り替えにjavascriptを使用しています。有効にしていない場合は有効にしてください。<br>
 							<p>
@@ -69,6 +72,7 @@
 						</div>
 						<div class="pageTitle">更新履歴</div>
 						<div class="pageContents">
+							2021/02/23 TALQu、SSYQu、VRMのページ追加、VRMと機械学習モデルについての利用規約加筆<br>
 							2020/12/17 ENUNUのNNSVSモデルMDNバージョンを追加<br>
 							2020/12/15 ENUNU対応のNNSVSモデルについて説明書きを追加<br>
 							2020/12/13 ENUNU対応のNNSVSモデルを追加<br>
@@ -208,6 +212,9 @@
 						<div class="pageTitle">NNSVSモデルダウンロード</div>
 						<div class="pageContents">
 							<div class="pageSubTitle">ENUNU対応</div>
+							ENUNUの使い方：<a href="https://note.com/crazy_utau/n/n45db22b33d2c" target="_blank">UTAUでNNSVSモデルを使おう！（ENUNU）</a><br>
+							補足：ダウンロードしたzipをUTAUへドラッグ＆ドロップしてください。もしくは、ダウンロードしたzipを解凍し、UTAU音源のごとくUTAUのvoiceフォルダに入れてください。<br>
+							ustを保存し、再生範囲を選択し、ENUNUを起動すると、保存したustと同じ場所にwavが出力されます。
 							<div style="background-color: black; padding:5px">
 								<span style="font-size:20px;font-weight:bold">※ENUNUの使い方についてご注意※<br></span>
 								2020/12/15現在、ENUNUは<span style="color:red">UTAUのwavファイルを生成ではなく</span>、<br>
@@ -233,9 +240,6 @@
 							<div class="pageSubSubTitle"><a href="https://drive.google.com/uc?export=download&id=1cuN9mOEZJKwoQC4KDJbSx0tUf1bb10ES" target="_blank">ENUNU_Haruqa_20201213</a></div>
 							<div class="pageSubSubContent">
 								Haruqa_AutoGenPitchFix_20201108からENUNU対応をしました。<br>
-								ENUNUの使い方：<a href="https://note.com/crazy_utau/n/n45db22b33d2c" target="_blank">UTAUでNNSVSモデルを使おう！（ENUNU）</a><br>
-								補足：ダウンロードしたzipをUTAUへドラッグ＆ドロップしてください。もしくは、ダウンロードしたzipを解凍し、UTAU音源のごとくUTAUのvoiceフォルダに入れてください。<br>
-								ustを保存し、再生範囲を選択し、ENUNUを起動すると、保存したustと同じ場所にwavが出力されます。
 							</div>
 							<div class="pageSubTitle">WSLのNNSVS対応</div>
 							<div class="pageSubSubTitle"><a href="https://drive.google.com/uc?export=download&id=1hW7gPmPiUc5V_vATDzyMk7ZdyNee8Dru" target="_blank">Haruqa_AutoGenPitchFix_20201108+WSLのNNSVS用実行GUI</a></div>
@@ -277,11 +281,12 @@
 							<div class="pageSubTitle">収録手法</div>
 							<div class="pageSubSubTitle">自由収録(FreestyleRec)</div>
 							<div class="pageSubSubContent">
-								詳細未公開
+								概要：音程やリズムを楽譜にとらわれず自由に発声したものを収録し、自動採譜。
 							</div>
 							<div class="pageSubSubTitle">忠実収録(FaithfulRec)</div>
 							<div class="pageSubSubContent">
-								詳細未公開
+								概要：音程やリズムを楽譜に合わせて収録。<br>
+								<a href="https://youtu.be/nhWPErfO_6U?list=PLn7tOeeieocCggOwFJvXx5wIeCD0M_hKf" target="_blank">省エネNNSVSモデル制作講座</a>にて随時情報公開中なのでぜひ(隙あらば宣伝)
 							</div>
 							<div class="pageSubSubTitle">UTAU収録(UTAURec)</div>
 							<div class="pageSubSubContent">
@@ -335,6 +340,35 @@
 						</div>
 					</div>
 					<div class="page" id="page3">
+						<div class="pageTitle">TALQuモデルダウンロード</div>
+						<div class="pageContents">
+							<div class="pageSubTitle">TALQu本体とデフォルトモデル</div>
+							Boothにて配布しています<br>
+							<a href="https://haruqa.booth.pm/items/2755336" target="_blank">TALQu 深層学習系読み上げソフト フリー/ドネーションウェア</a>
+						</div>
+					</div>
+					<div class="page" id="page4">
+						<div class="pageTitle">SSYQu専用音源ダウンロード</div>
+						<div class="pageContents">
+							<div class="pageSubTitle">SSYQu本体とデフォルト専用音源</div>
+							Boothにて配布しています<br>
+							<a href="https://haruqa.booth.pm/items/2024303" target="_blank">SSYQu ささやき声読み上げソフト フリー/ドネーションウェア</a>
+						</div>
+					</div>
+					<div class="page" id="page5">
+						<div class="pageTitle">VRMダウンロード</div>
+						<div class="pageContents">
+							<div class="pageSubTitle">VRM</div>
+							<a href="https://drive.google.com/uc?export=download&id=1EaNMZ-qCBqEVc-0jMbcgI9ThT2OfbdLy" target="_blank">Haruqa_緑パーカー - Ver.1.2.0</a><br>
+							<a href="https://drive.google.com/uc?export=download&id=1JxFiVriN60gaOrY4DLty5u8wQAvRep8R" target="_blank">Haruqa_マイクラのすがた - Ver1.1.0</a><br>
+							<a href="https://drive.google.com/uc?export=download&id=1EhSWjTRWrviVu7jwtDu-jm9eXNGBVc40" target="_blank">Haruqa_迷彩ワンピース - Ver.20200703</a><br>
+							<div class="pageSubTitle">VRoidHubでのプレビュー</div>
+							※VRoidHubはライセンス情報が書き換えられてしまうのでダウンロード不可＆Haruqa以外の声あて不可の簡単のため口のブレンドシェイプを抜いています<br>
+							<a href="https://hub.vroid.com/characters/4799087323909469331/models/6352393878392796836" target="_blank">Haruqa_緑パーカー</a><br>
+							<a href="https://hub.vroid.com/characters/4799087323909469331/models/2381755346597315359" target="_blank">Haruqa_マイクラのすがた</a><br>
+						</div>
+					</div>
+					<div class="page" id="page6">
 						<div class="pageTitle">MMDモデルダウンロード</div>
 						<div class="pageContents">
 							<div class="pageSubTitle">VRoidから変換調整モデル</div>
@@ -352,7 +386,7 @@
 							<img style="display: block;margin-right: auto;margin-left: auto; width: 100%;" src="img/ray-mmdキャプチャ.png">
 						</div>
 					</div>
-					<div class="page" id="page4">
+					<div class="page" id="page7">
 						<div class="pageTitle">立ち絵ダウンロード</div>
 						<div class="pageContents">
 							<div class="pageSubTitle">立ち絵とマイクラスキン</div>
@@ -363,7 +397,7 @@
 							<img style="display: block;margin-right: auto;margin-left: auto; width: 100%;" src="img/キャラクターデザイン設定.jpg">
 						</div>
 					</div>
-					<div class="page" id="page5">
+					<div class="page" id="page8">
 						<div class="pageTitle">キャラクター詳細</div>
 						キャラクターの詳細設定です。創作していただく上でヒントになれば幸いです。厳守する必要はありません。まれに変更されます。
 						<div class="pageContents">
@@ -475,13 +509,13 @@
 							</div>
 						</div>
 					</div>
-					<div class="page" id="page6">
+					<div class="page" id="page9">
 						<div class="pageTitle">利用規約</div>
 						<div class="pageContents">
 							<div class="pageSubTitle">はじめに</div>
 							<div class="pageSubSubContent">
 								Haruqa利用規約のご確認ありがとうございます。</br>
-								以下の共通利用規約、音源利用規約、キャラクター利用規約、3Dモデル利用規約、n次創作利用規約、それぞれ対応する利用規約に同意の上ご利用下さいませ。</br>
+								以下の共通利用規約、音源利用規約、キャラクター利用規約、3Dモデル利用規約、機械学習音声モデルや機械学習用音声(データセット)に関連する規約、n次創作利用規約、それぞれ対応する利用規約に同意の上ご利用下さいませ。</br>
 								利用規約は予告なく改訂される可能性があります。あらかじめご了承くださいませ。</br>
 								Haruqaを使用した場合、Haruqa利用規約に同意したものとみなします。
 							</div>
@@ -652,6 +686,38 @@
 							<div class="pageSubSubContent">
 								・PMDE/PMXEで調整する行為
 							</div>
+							<div class="pageSubSubTitle">VRM許可事項</div>
+							<div class="pageSubSubContent">
+								・他者が利用できない範囲でのオンラインサービスアップロード(VRoidHubへの非公開アップロード、VRChatへの非Publicアップロードなど)</br>
+								※ただし、繰り返しとなりますがHaruqa以外の声あてNGであることをご留意ください、TALQuやSSYQu、UTAU音源による喋り声を当てることが可能です</br>
+								・Blender、Unity等で調整する行為
+							</div>
+							<div class="pageSubTitle">機械学習音声モデルや機械学習用音声(データセット)に関連する規約</div>
+							<div class="pageSubSubTitle">補足事項</div>
+							<div class="pageSubSubContent">
+								・機械学習音声モデルから出力した音声については「音源利用規約」に準じて下さい</br>
+								・機械学習用音声を機械学習などを通さずそのまま利用する場合、もしくはUTAUや波形編集ソフト等で加工して利用する場合については「音源利用規約」に準じて下さい</br>
+								・作成に使用したコーパステキストから継承される規約も合わせてご確認ください</br>
+								・転移学習やファインチューニング元として使用し、Haruqaの声質を再現することがなくなった機械学習モデルの出力音声は、Haruqaの声ではないと定義します。言い換えるとキャラクターのHaruqaに声あてを行うことが出来ません</br>
+							</div>
+							<div class="pageSubSubTitle">管理者の事前の許可が必要な事項</div>
+							<div class="pageSubSubContent">
+								・機械学習用音声を機械学習用に前処理加工を行ったファイル群を配布する行為</br>
+								・機械学習音声モデルや機械学習用音声から生成した機械学習音声モデルを転移学習やファインチューニング元として使用・配布する行為、使用した旨の表記に関してCC-BY-SAとします</br>
+								</br>
+								【Haruqaの声質が再現されない場合】</br>
+								・管理者の事前の許可があり転移学習やファインチューニング元として使用した場合で、特殊事由があり使用した旨を表記せず使用・配布する行為、この場合Haruqa側から制約を課しません</br>
+								・機械学習用音声を使用した機械学習モデルを配布する行為</br>
+								</br>
+								【Haruqaの声質が再現される場合】</br>
+								・機械学習用音声を使用した機械学習モデルを配布する行為、ただしこの利用規約が継承されます
+							</div>
+							<div class="pageSubSubTitle">許可事項</div>
+							<div class="pageSubSubContent">
+								・機械学習用音声を自動的にダウンロードするツールを公開する行為、ただしこの利用規約が確認できるよう案内する工夫をすること</br>
+								・機械学習用音声を使用した機械学習モデルの出力音声や動作デモ(音声認識想定)を公開する行為、ただし使用した旨を表記すること</br>
+								・機械学習用音声を機械学習用に前処理加工をする手順を公開する行為
+							</div>
 							<div class="pageSubTitle">n次創作利用規約</div>
 							<div class="pageSubSubTitle">前提事項</div>
 							<div class="pageSubSubContent">
@@ -687,7 +753,7 @@
 				</div>
 			</div><!-- mainContentsWrapper -->
 			<div id="footerWrapper">
-				<span id="copyright">Copyright Haruqa 2012 - 2020</span>
+				<span id="copyright">Copyright Haruqa 2012 - 2021</span>
 			</div>
 		</div><!-- contentsWrapper -->
 		<div id="toUpBtn">
