@@ -1,6 +1,6 @@
 /*
 * Copyright Haruqa
-* Version 1.0.1
+* Version 1.0.2
 * Do Not Modify
 */
 
@@ -137,8 +137,30 @@ hr{
 	margin: 20px 0 0 15px;
 }
 
+.pageSubSubTitle_red{
+	border-left: solid 3px #FF0000;
+	padding-left: 10px;
+	margin: 20px 0 0 15px;
+}
+
+.pageSubSubTitle_yellow{
+	border-left: solid 3px #FFFF00;
+	padding-left: 10px;
+	margin: 20px 0 0 15px;
+}
+
+.tadashi{
+	background-color:#202020;
+	color: #FFFF55
+}
+
 .pageSubSubContent{
 	margin-left: 28px;
+}
+
+.pageSubSubContent_black{
+	margin-left: 28px;
+	background-color: #202020;
 }
 
 .codeBox{
